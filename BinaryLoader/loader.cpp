@@ -1,5 +1,5 @@
 #include <bfd.h>
-#include "loader.hpp"
+#include <loader.h>
 
 static int load_binary_bfd(std::string &fname, Binary *bin, Binary::BinaryType type);
 static bfd* open_bfd(std::string &fname);

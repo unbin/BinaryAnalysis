@@ -1,4 +1,4 @@
-// From "Practical Binary Analysis" by Dennis Andriesse
+// TODO: Override weak dynamic symbols
 
 #ifndef LOADER_H
 #define LOADER_H
@@ -15,7 +15,8 @@ class Symbol {
 public:
 	enum SymbolType {
 		SYM_TYPE_UKN = 0,
-		SYM_TYPE_FUNC = 1
+		SYM_TYPE_FUNC = 1,
+		SYM_TYPE_DATA = 2
 	};
 
 	SymbolType 		type;
